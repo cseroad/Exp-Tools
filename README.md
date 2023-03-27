@@ -5,17 +5,19 @@
 该工具使用了ExpDemo-JavaFX项目，保留了核心的数据包请求接口。对系列oa漏洞进行了复现和分析，极力避免exp的误报和有效性。
 
 截止到目前为止，已实现了用友、泛微、通达、致远、帆软报表、万户、蓝凌、红帆、华天动力总共9个OA。
-全部是命令执行、文件上传类的漏洞，包括前台和后台，已知漏洞和未知漏洞，未编写log4j、fastjson相关漏洞。
+全部是命令执行、文件上传类的漏洞，包括前台和后台，未编写log4j、fastjson相关漏洞。
 
 用友已完成：
 - 用友NC-BshServlet 远程命令执行
 - 用友NC-BshServlet-bypass 远程命令执行
 - 用友NC accept 文件上传
 - 用友GRP-U8 UploadFileData 文件上传
+- 用友GRP-U8 AppProxy 文件上传
 - 用友反序列化-1
 - 用友反序列化-2
 - 用友畅捷通T+文件上传
 - 用友KSOA ImageUpload 文件上传
+- 用友KSOA Attachment 文件写入
 
 泛微已完成:
 - 泛微OA KtreeUploadAction 文件上传
@@ -82,9 +84,9 @@
 
 启动命令：
 
-java -javaagent:Exp-Tools-1.1.4-encrypted.jar -jar Exp-Tools-1.1.4-encrypted.jar
+java -javaagent:Exp-Tools-1.1.3-encrypted.jar -jar Exp-Tools-1.1.3-encrypted.jar
 
-![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
+![image-20220324174004915](images/Snipaste_2023-02-28_09-49-21.jpg)
 
 ## 更新日志
 
@@ -107,7 +109,7 @@ java -javaagent:Exp-Tools-1.1.4-encrypted.jar -jar Exp-Tools-1.1.4-encrypted.jar
 
 - 新增YongyouNC反序列化漏洞
 
-### 2022/3/27
+### 2022/3/17
 
 - 新增Yongyou-U8 AppProxy 文件上传漏洞
 - 新增用友KSOA Attachment 文件写入漏洞
