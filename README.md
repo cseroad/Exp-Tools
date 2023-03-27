@@ -109,7 +109,7 @@ java -javaagent:Exp-Tools-1.1.4-encrypted.jar -jar Exp-Tools-1.1.4-encrypted.jar
 ### 2022/3/27
 
 - 新增Yongyou-U8 AppProxy 文件上传漏洞
-- 新增用友KSOA Attachment 文件写入漏洞、
+- 新增用友KSOA Attachment 文件写入漏洞
 - 新增致远后台模板管理器文件上传漏洞
 - 修复多个bug
 
