@@ -1,13 +1,11 @@
-# Exp-Tools
-一款集成各种exp的实用性工具
 
 **本工具仅供安全测试人员运用于授权测试, 禁止用于未授权测试, 违者责任自负。**
 
 ## 简介
-该工具使用了ExpDemo-JavaFX项目，jdk1.8版本，保留了核心的数据包请求接口。对系列oa漏洞进行了复现和分析，极力避免exp的误报和有效性。
+该工具使用了ExpDemo-JavaFX项目，保留了核心的数据包请求接口。对系列oa漏洞进行了复现和分析，极力避免exp的误报和有效性。
 
 截止到目前为止，已实现了用友、泛微、通达、致远、帆软报表、万户、蓝凌、红帆、华天动力总共9个OA。
-全部是获取权限的有效漏洞，包括命令执行、文件上传、sql注入等漏洞，包括前台和后台，未编写log4j、fastjson相关漏洞。
+全部是命令执行、文件上传类的漏洞，包括前台和后台，未编写log4j、fastjson相关漏洞。
 
 用友已完成：
 - 用友NC-BshServlet 远程命令执行
@@ -82,10 +80,10 @@
 直接下载releases版即可
 
 启动命令：
-```java -javaagent:Exp-Tools-1.1.3-encrypted.jar -jar Exp-Tools-1.1.3-encrypted.jar```
 
+java -javaagent:Exp-Tools-1.1.3-encrypted.jar -jar Exp-Tools-1.1.3-encrypted.jar
 
-![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
+![image-20220324174004915](images/Snipaste_2023-02-28_09-49-21.jpg)
 
 ## 更新日志
 
@@ -108,6 +106,13 @@
 
 - 新增YongyouNC反序列化漏洞
 
+## 2022/3/27
+
+- 新增Yongyou-U8 AppProxy 文件上传漏洞
+- 新增用友KSOA Attachment 文件写入漏洞、
+- 新增致远后台模板管理器文件上传漏洞
+- 修复多个bug
+
 ## 参考链接
 https://github.com/White-hua/Apt_t00ls
 
@@ -122,9 +127,6 @@ https://github.com/0x727/DropLabTools
 
 
 https://github.com/Ghost2097221/YongyouNC-Unserialize-Tools
-
-
-https://mp.weixin.qq.com/s/CAe-ytKGsDFQSDuf3VMGZA
 
 
 ## 问题建议
