@@ -2,7 +2,7 @@
 **本工具仅供安全测试人员运用于授权测试, 禁止用于未授权测试, 违者责任自负。**
 
 ## 简介
-该工具使用了ExpDemo-JavaFX项目，保留了核心的数据包请求接口。对系列oa漏洞进行了复现和分析，极力避免exp的误报和有效性。
+该工具使用了ExpDemo-JavaFX项目，保留了核心的数据包请求接口，使用jdk1.8环境开发。目前只编写了oa系列，对相关漏洞进行复现和分析，极力避免exp的误报和有效性。
 
 截止到目前为止，已实现了用友、泛微、通达、致远、帆软报表、万户、蓝凌、红帆、华天动力总共9个OA。
 全部是命令执行、文件上传类的漏洞，包括前台和后台，未编写log4j、fastjson相关漏洞。
@@ -11,6 +11,7 @@
 - 用友NC-BshServlet 远程命令执行
 - 用友NC-BshServlet-bypass 远程命令执行
 - 用友NC accept 文件上传
+- 用友CRM swfupload 文件上传
 - 用友GRP-U8 UploadFileData 文件上传
 - 用友GRP-U8 AppProxy 文件上传
 - 用友反序列化-1
@@ -40,6 +41,7 @@
 - 蓝凌OA SSRF BeanShell 文件上传
 - 蓝凌OA SSRF XmlDecoder 文件上传
 - 蓝凌OA treexml 命令执行
+- 蓝凌OA后台模板文件上传 
 
 万户已完成:
 - 万户OA fileUpload 文件上传
@@ -84,9 +86,9 @@
 
 启动命令：
 
-java -javaagent:Exp-Tools-1.1.4-encrypted.jar -jar Exp-Tools-1.1.4-encrypted.jar
+java -javaagent:Exp-Tools-1.1.5-encrypted.jar -jar Exp-Tools-1.1.5-encrypted.jar
 
-![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
+![image-20220324174004915](images/Snipaste_2023-02-28_09-49-21.jpg)
 
 ## 更新日志
 
@@ -116,21 +118,20 @@ java -javaagent:Exp-Tools-1.1.4-encrypted.jar -jar Exp-Tools-1.1.4-encrypted.jar
 - 新增致远后台模板管理器文件上传漏洞
 - 修复多个bug
 
+### 2022/4/6
+
+- 新增蓝凌oa后台模板上传漏洞
+- 新增用友CRM swfupload 文件上传
+- 修复cookie 更新
+- 优化部分代码
+- 修复多个bug
+
 ## 参考链接
 https://github.com/White-hua/Apt_t00ls
-
-
 https://github.com/xinyu2428/TDOA_RCE
-
-
 https://github.com/yhy0/ExpDemo-JavaFX
-
-
 https://github.com/0x727/DropLabTools
-
-
+https://github.com/xinyu2428/TDOA_RCE
 https://github.com/Ghost2097221/YongyouNC-Unserialize-Tools
-
-
 ## 问题建议
 如果使用过程出现误报、漏报或未添加的exp，欢迎师傅们提交issues
