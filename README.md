@@ -28,10 +28,10 @@
 - 泛微eoffice UploadFile 文件上传
 - 泛微eoffice ajax 文件上传
 - 泛微BshServlet 远程命令执行
-- 泛微ecology前台sql注入
+- 泛微ecology前台sql注入-1
+- 泛微ecology前台sql注入-2
 - 泛微ecology FileClient 文件上传
 - 泛微ecology后台风格文件上传
-- 泛微ecology后台皮肤文件上传
 - 泛微ecology后台流程命令执行
 - 泛微emobile client命令执行
 - 泛微emobile messageType命令执行
@@ -78,11 +78,12 @@
 
 红帆已完成:
 - 红帆OA任意文件上传
+- 红帆OA任意文件写入
 
 华天动力已完成:
 - 华天动力OA任意文件上传
 ## 使用说明
-直接下载releases版即可
+直接下载releases版本即可
 
 启动命令：
 
@@ -105,45 +106,46 @@ java -javaagent:Exp-Tools-1.1.5-encrypted.jar -jar Exp-Tools-1.1.5-encrypted.jar
 
 ### 2022/2/28
 
-- 修复通达oa后台附件文件上传漏洞一处bug
+- 修复通达oa后台附件文件上传一处bug
 
 ### 2022/3/1
 
-- 新增YongyouNC反序列化漏洞
+- 新增YongyouNC反序列化
 
 ### 2022/3/17
 
-- 新增Yongyou-U8 AppProxy 文件上传漏洞
-- 新增用友KSOA Attachment 文件写入漏洞
-- 新增致远后台模板管理器文件上传漏洞
+- 新增Yongyou-U8 AppProxy 文件上传
+- 新增用友KSOA Attachment 文件写入
+- 新增致远后台模板管理器文件上传
 - 修复多个bug
 
 ### 2022/4/6
 
-- 新增蓝凌oa后台模板上传漏洞
+- 新增蓝凌oa后台模板上传
 - 新增用友CRM swfupload 文件上传
 - 修复cookie 更新
 - 优化部分代码
 - 修复多个bug
 
+### 2022/4/27
+- 新增泛微ecology前台sql注入-2
+- 新增红帆OA任意文件写入
+- 修复泛微emobile一处bug
+- 删除泛微ecology后台皮肤文件上传
+- 删除conf文件夹，修改为启动时创建
+- 删除cookie提示
+
 ## 参考链接
 https://github.com/White-hua/Apt_t00ls
 
-
 https://github.com/xinyu2428/TDOA_RCE
-
 
 https://github.com/yhy0/ExpDemo-JavaFX
 
-
 https://github.com/0x727/DropLabTools
-
 
 https://github.com/xinyu2428/TDOA_RCE
 
-
 https://github.com/Ghost2097221/YongyouNC-Unserialize-Tools
-
-
 ## 问题建议
 如果使用过程出现误报、漏报或未添加的exp，欢迎师傅们提交issues
