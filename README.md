@@ -87,7 +87,7 @@
 
 启动命令：
 
-java -javaagent:Exp-Tools-1.1.5-encrypted.jar -jar Exp-Tools-1.1.5-encrypted.jar
+java -javaagent:Exp-Tools-1.1.6-encrypted.jar -jar Exp-Tools-1.1.6-encrypted.jar
 
 ![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
 
