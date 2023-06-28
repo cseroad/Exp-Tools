@@ -160,3 +160,9 @@ https://github.com/xinyu2428/TDOA_RCE
 https://github.com/Ghost2097221/YongyouNC-Unserialize-Tools
 ## 问题建议
 如果使用过程出现误报、漏报、未添加的exp以及更好的建议，欢迎师傅们提交issues
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/cseroad/Exp-Tools.svg)](https://starchart.cc/cseroad/Exp-Tools)
+
