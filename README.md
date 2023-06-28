@@ -65,6 +65,7 @@
 - 致远后台模板文件上传
 - 致远后台模板管理器文件上传
 - 致远帆软报表文件读取
+- 致远帆软报表文件读取-bypass
 - 致远帆软报表后台插件文件上传
 - 致远帆软报表后台主题文件上传
 
@@ -85,41 +86,41 @@
 ## 使用说明
 直接下载releases版本即可
 
-启动命令：
+**使用JDK8启动，命令如下：**
 
-java -javaagent:Exp-Tools-1.1.6-encrypted.jar -jar Exp-Tools-1.1.6-encrypted.jar
+java -javaagent:Exp-Tools-1.2.0-encrypted.jar -jar Exp-Tools-1.2.0-encrypted.jar
 
 ![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
 
 ## 更新日志
 
-### 2022/1/2
+### 2023/1/2
 
 - 新增红帆OA任意文件上传
 - 新增华天动力OA任意文件上传
 
-### 2022/2/1
+### 2023/2/1
 
 - 新增泛微ecology FileClient 文件上传
 - 新增泛微ecology后台流程命令执行
 - 默认上传文件修改为json.txt
 
-### 2022/2/28
+### 2023/2/28
 
 - 修复通达oa后台附件文件上传一处bug
 
-### 2022/3/1
+### 2023/3/1
 
 - 新增YongyouNC反序列化
 
-### 2022/3/17
+### 2023/3/17
 
 - 新增Yongyou-U8 AppProxy 文件上传
 - 新增用友KSOA Attachment 文件写入
 - 新增致远后台模板管理器文件上传
 - 修复多个bug
 
-### 2022/4/6
+### 2023/4/6
 
 - 新增蓝凌oa后台模板上传
 - 新增用友CRM swfupload 文件上传
@@ -127,13 +128,23 @@ java -javaagent:Exp-Tools-1.1.6-encrypted.jar -jar Exp-Tools-1.1.6-encrypted.jar
 - 优化部分代码
 - 修复多个bug
 
-### 2022/4/27
+### 2023/4/27
 - 新增泛微ecology前台sql注入-2
 - 新增红帆OA任意文件写入
 - 修复泛微emobile一处bug
 - 删除泛微ecology后台皮肤文件上传
 - 删除conf文件夹，修改为启动时创建
 - 删除cookie提示
+
+### 2023/6/28
+- 新增用友畅捷通T+SQL注入
+- 新增致远帆软报表文件读取-bypass
+- 新增泛微eoffice uploadify上传
+- 新增php-framework和java-framework
+- 新增nacos任意用户添加
+- 新增金蝶云星空反序列化
+- 优化部分代码
+
 
 ## 参考链接
 https://github.com/White-hua/Apt_t00ls
@@ -148,10 +159,4 @@ https://github.com/xinyu2428/TDOA_RCE
 
 https://github.com/Ghost2097221/YongyouNC-Unserialize-Tools
 ## 问题建议
-如果使用过程出现误报、漏报或未添加的exp，欢迎师傅们提交issues
-
-
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/cseroad/Exp-Tools.svg)](https://starchart.cc/cseroad/Exp-Tools)
+如果使用过程出现误报、漏报、未添加的exp以及更好的建议，欢迎师傅们提交issues
