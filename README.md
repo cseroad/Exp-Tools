@@ -121,6 +121,9 @@
 
 java -javaagent:Exp-Tools-1.2.3-encrypted.jar -jar Exp-Tools-1.2.3-encrypted.jar
 
+密码：exp@123
+
+
 ![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
 
 ## 更新日志
