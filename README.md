@@ -13,10 +13,11 @@
 - 用友NC accept 文件上传
 - 用友NC uapim 文件上传
 - 用友NC mp 文件上传
-- 用友CRM swfupload 文件上传
-- 用友CRM getemaildata 文件上传
+- 用友U8CRM swfupload 文件上传
+- 用友U8CRM getemaildata 文件上传
 - 用友GRP-U8 UploadFileData 文件上传
-- 用友GRP-U8 AppProxy 文件上传
+- 用友GRP-U8 U8AppProxy 文件上传
+- 用友GRP-U8 services 文件写入
 - 用友U8 cloud文件上传
 - 用友反序列化-1
 - 用友反序列化-2
@@ -40,6 +41,7 @@
 - 泛微BshServlet 远程命令执行
 - 泛微ecology前台sql注入-1
 - 泛微ecology前台sql注入-2
+- 泛微ecology前台sql注入-3
 - 泛微ecology WorkflowServiceXml命令执行
 - 泛微ecology FileClient 文件上传
 - 泛微ecology后台风格文件上传
@@ -49,6 +51,7 @@
 - 泛微emobile lang2sql文件覆盖
 
 蓝凌已完成:
+- 蓝凌OA 任意用户登录
 - 蓝凌OA SSRF
 - 蓝凌OA SSRF BeanShell 文件上传
 - 蓝凌OA SSRF XmlDecoder 文件上传
@@ -57,7 +60,7 @@
 - 蓝凌OA主题文件上传
 - 蓝凌OA jg_service文件上传
 - 蓝凌OA后台模板文件上传
-
+- 蓝凌EIS api文件上传
 
 万户已完成:
 - 万户OA用户密码泄露
@@ -65,6 +68,8 @@
 - 万户OA officeserverservlet 文件上传
 - 万户OA smartUpload 文件上传
 - 万户OA OfficeServer 文件上传
+- 万户OA senddocument 文件导入
+- 万户OA wpsservlet 文件上传
 - 万户OA SOAP 文件写入
 
 帆软已完成:
@@ -72,6 +77,7 @@
 - 帆软报表任意文件读取-bypass
 - 帆软报表任意文件覆盖
 - 帆软报表未授权命令执行
+- 帆软报表channel命令执行
 - 帆软报表后台插件文件上传
 - 帆软报表后台主题文件上传
 
@@ -98,7 +104,8 @@
 - 通达任意用户登录-3
 - 通达任意用户登录-4
 - 通达Ispirit文件上传
-- 通达ueditor文件上传 
+- 通达ueditor文件上传
+- 通达gateway反序列化
 - 通达后台附件文件上传
 
 红帆已完成:
@@ -106,13 +113,22 @@
 - 红帆OA任意文件写入
 
 金和已完成:
-- 金和OA OfficeServer文件上传
+- 金和OA命令执行
 - 金和OA editeprint文件写入 	
-- 金和OA saveAsOtherFormatServlet文件上传 	
+- 金和OA saveAsOtherFormatServlet文件上传
 - 金和OA OfficeServer文件上传
+- 金和OA jcsUploadServlet文件上传	
 
+金蝶已完成:
+- 金蝶云星空反序列化 	
+- 金蝶云星空文件上传 	
+- 金蝶EAS file文件上传 	
+- 金蝶EAS logo文件上传 	
+- 金蝶Apusic 文件上传 
+	
 华天动力已完成:
-- 华天动力OA任意文件上传
+- 华天动力OA ntkoupload 文件上传
+- 华天动力OA Servlet文件上传
 
 ## 使用说明
 直接下载releases版本即可
@@ -120,9 +136,6 @@
 **使用JDK8启动，命令如下：**
 
 java -javaagent:Exp-Tools-1.2.3-encrypted.jar -jar Exp-Tools-1.2.3-encrypted.jar
-
-密码：exp@123
-
 
 ![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
 
@@ -200,6 +213,13 @@ java -javaagent:Exp-Tools-1.2.3-encrypted.jar -jar Exp-Tools-1.2.3-encrypted.jar
 - 新增蓝凌、用友、万户部分漏洞
 - 修复部分漏洞误报
 - 优化部分代码
+
+### 2023/11/24
+- 新增蓝凌、nacos、用友部分漏洞
+
+### 2023/12/08
+- 修复asp上传内容
+- 新增部分漏洞
 
 
 ## 参考链接
