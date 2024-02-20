@@ -135,7 +135,7 @@
 
 **使用JDK8启动，命令如下：**
 
-java -javaagent:Exp-Tools-1.2.3-encrypted.jar -jar Exp-Tools-1.2.3-encrypted.jar
+java -javaagent:Exp-Tools-1.2.5-encrypted.jar -jar Exp-Tools-1.2.5-encrypted.jar
 
 ![image-20220324174004915](images/Snipaste_2023-03-09_09-19-21.jpg)
 
