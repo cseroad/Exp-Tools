@@ -255,7 +255,7 @@ https://github.com/Ghost2097221/YongyouNC-Unserialize-Tools
 
 **给作者点个star或请作者喝杯咖啡**
 
-![image-20220324174004916](images/11730857868_.pic.jpg)
+![image-20220324174004916](images/11730857868_.pic_thumb.jpg)
 
 ## Stargazers over time
 
